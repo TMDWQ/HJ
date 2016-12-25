@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.micro.android316.housekeeping">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+
+    <!--<code class="code"> <uses-permission android:name="android.permission.INTERNET"/> <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> <uses-permission android:name="android.permission.READ_PHONE_STATE"/> <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> </code>-->
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/my_head"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.OnlineOnsultant"/>
+
+        <activity android:name=".activity.ToheaderActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.HomeMainActivity" android:launchMode="singleTask"/>
+        <activity android:name=".activity.GuideActivity"/>
+
+        <activity android:name=".activity.Appointment"/>
+        <activity android:name=".activity.Category">
+        </activity>
+        <activity android:name=".activity.Elderly"/>
+        <activity android:name=".activity.Payment">
+
+        </activity>
+        <activity android:name=".activity.NannyInformation"/>
+        <activity android:name=".activity.OrderConfirm"/>
+        <activity android:name=".activity.Login"/>
+        <activity android:name=".activity.RegisterActivity"/>
+        <activity android:name=".activity.PersonalInformationActivity"/>
+        <activity android:name=".activity.Message"/>
+        <activity android:name=".activity.Set"/>
+        <activity android:name=".activity.About"/>
+        <activity android:name=".activity.FeedBack"/>
+        <activity android:name=".activity.CommonAddressActivity"/>
+        <activity android:name=".activity.Orderdetail"/>
+
+        <activity android:name=".activity.Online"/>
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:noHistory="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent798503604" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="0k6NfKvXMq11rQWPPMdPz3h07YvuNQel" />
+
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.WeiXin"/>
+
+
+    </application>
+
+</manifest>

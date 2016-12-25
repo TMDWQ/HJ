@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#111"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/top_back"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            android:textSize="18dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        >
+
+        <EditText
+            android:id="@+id/tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="手机号码"
+            android:textColorHint="#bfbfbf"
+            android:textSize="14dp"
+            android:background="#fff"
+            android:padding="5dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bfbfbf"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:id="@+id/verification"
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="验证码"
+                android:textColorHint="#bfbfbf"
+                android:textSize="14dp"
+                android:background="#fff"
+                android:padding="5dp"
+                />
+            <TextView
+                android:id="@+id/get_verification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="获取验证码"
+                android:textSize="14dp"
+                android:textColor="#1598ce"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bfbfbf"
+            />
+
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="登录密码\t\t6-16位数字字母组合密码"
+            android:textColorHint="#bfbfbf"
+            android:textSize="14dp"
+            android:background="#fff"
+            android:padding="5dp"
+            android:id="@+id/passwd" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bfbfbf"
+            />
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/button"
+            android:layout_marginTop="40dp"
+            android:text="立即注册"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

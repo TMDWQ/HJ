@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#000000">
+        <ImageView
+            android:id="@+id/img_online_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/top_back"
+            android:layout_gravity="center"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="在线咨询"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/img_online_sounds"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:src="@mipmap/sounds"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"/>
+        <EditText
+            android:id="@+id/edit_online_words"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="26dp"
+            android:background="@null"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/textview_online_send"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:text="发送"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/orderdetail_item_blue"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">无忧家政</string>
+    <string name="chongqing">重庆</string>
+    <string name="theme">无忧家政</string>
+    <string name="nurse">护理</string>
+    <string name="clean">家居清洁</string>
+    <string name="make_environment">打造舒适环境</string>
+    <string name="cooking">日常烹饪</string>
+    <string name="easy_enjoy_food">轻松享受美食</string>
+    <string name="recommend">推荐</string>
+    <string name="brief_jntroduction">她真诚、专业的服务感染着用户全家人，让用户能够安心
+                    地工作，不为家事分心...</string>
+    <string name="home_page">首页</string>
+    <string name="order">订单</string>
+    <string name="mine">我的</string>
+    <string name="text">\t\t时下，老年人保健主要是药物、健身，很少有人考虑心理健康问题。但现实生活中很多老年人由于长期缺乏与人沟通，易产生孤独、自尊感不强和老 而无用的感觉，牢骚越多越影响心理健康，也不懂得如何调整自己的心态。\n\t\t良好的心理素质有益于增强体质，提高抗病能力。对于老人，晚辈不仅要在生活上给予无微不至的关照，在心理和情感上也要给予必要的抚慰。要陪老人多拉家常，多散心，并要注意多尊敬老人，千万不可随意批评和顶撞，为了养育儿女，父母的一生经历了数不清的艰辛，当他们人至暮年时，别说所表现出来的“古怪”是有情可原的，就是确有无理取闹、耍小孩子脾气之处，做晚辈的也应多加忍让，而不可在老人面前造次。</string>
+    <string name="jiduzhixing">季度之星</string>
+    <string name="pinglun">这个阿姨做的菜太好吃啦！这个阿姨做的菜太好吃啦！这个阿姨做的菜太好吃啦！这个阿姨做的菜太好吃啦！这个阿姨做的菜太好吃啦！这个阿姨做的菜太好吃啦！</string>
+</resources>
