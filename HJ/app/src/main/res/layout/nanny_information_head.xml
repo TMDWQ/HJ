@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+
+        >
+        <LinearLayout
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            >
+            <ImageView
+                android:id="@+id/head"
+                android:layout_width="101dp"
+                android:layout_height="101dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/collect_head"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="张淑芬"
+                        android:textSize="14dp"
+                        android:textColor="#424141"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="30岁"
+                        android:textColor="#A6A2A2"
+                        android:layout_marginLeft="15dp"
+                        />
+                    <TextView
+                        android:id="@+id/li_ji_yu_yue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="立即预约"
+                        android:textSize="11dp"
+                        android:textColor="#1598CE"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="9dp"
+                        android:paddingRight="9dp"
+                        android:background="@drawable/make_an_appointment"
+                        />
+
+                </LinearLayout>
+
+               <com.micro.android316.housekeeping.CustomControls.RatingBar
+                   android:layout_width="110dp"
+                   android:layout_height="20dp"
+                   android:id="@+id/rating_bar"
+                   />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#E6E6E6"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="3880元/月"
+                        android:textColor="#424141"
+                        android:textSize="10dp"
+
+                        />
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="11dp"
+                        android:src="@mipmap/love"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:textColor="#B3B3B3"
+                    android:textSize="10dp"
+                    android:text="她真诚、专业的服务感染着用户全家人，让用户能够安心地工作，不为家事分心。张阿姨..."
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="证件信息"
+            android:textSize="14dp"
+            android:textColor="#A6A2A2"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E6E6E6"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <CheckBox
+                    android:id="@+id/b1"
+                    android:background="@drawable/check"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:button="@drawable/checkbox"
+                    android:checked="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="实名认证"
+                    android:textColor="#424141"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="2dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <CheckBox
+                    android:id="@+id/b2"
+                    android:background="@drawable/check"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:button="@drawable/checkbox"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="健康证"
+                    android:textColor="#424141"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="2dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                >
+                <CheckBox
+                    android:id="@+id/b3"
+                    android:background="@drawable/check"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:button="@drawable/checkbox"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="职业资格证"
+                    android:textColor="#424141"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                >
+                <CheckBox
+                    android:id="@+id/b4"
+                    android:background="@drawable/check"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:button="@drawable/checkbox"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="培训证"
+                    android:textColor="#424141"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/textView2"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="技能特长"
+            android:textSize="14dp"
+            android:textColor="#A6A2A2"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E6E6E6"
+            android:layout_marginTop="5dp"
+            android:id="@+id/view"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="6dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <CheckBox
+                    android:id="@+id/b5"
+                    android:background="@drawable/check"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:button="@drawable/checkbox"
+                    android:checked="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="普通话标准"
+                    android:textColor="#424141"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="2dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <CheckBox
+                    android:id="@+id/b6"
+                    android:background="@drawable/check"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:button="@drawable/checkbox"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会开车"
+                    android:textColor="#424141"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="2dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                >
+                <CheckBox
+                    android:id="@+id/b7"
+                    android:background="@drawable/check"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:button="@drawable/checkbox"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会做饭"
+                    android:textColor="#424141"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                >
+                <CheckBox
+                    android:id="@+id/b8"
+                    android:background="@drawable/check"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:button="@drawable/checkbox"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="懂营养搭配"
+                    android:textColor="#424141"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        >
+
+        <TextView
+            android:id="@+id/good"
+            android:padding="9dp"
+            android:background="#fff"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="满意\t\t111"
+            android:textColor="#1598CE"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/normal"
+            android:background="#fff"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="一般\t\t0"
+            android:padding="9dp"
+            android:textColor="#807B7B"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            />
+        <TextView
+            android:id="@+id/bad"
+            android:background="#fff"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="不满意\t\t0"
+            android:textColor="#807B7B"
+            android:gravity="center"
+            android:padding="9dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

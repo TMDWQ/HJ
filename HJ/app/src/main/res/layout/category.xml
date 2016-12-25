@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#111"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/top_back"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分类"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            android:textSize="18dp"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <com.micro.android316.housekeeping.CustomControls.SwitchView
+            android:id="@+id/choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/pager"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:src="@mipmap/home_class_nurse"
+                android:scaleType="centerCrop"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:paddingTop="18dp"
+                android:paddingBottom="20dp"
+                >
+
+                <TextView
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:text="老人护理"
+                     android:gravity="center"
+                     android:textColor="#1598CE"
+                     android:id="@+id/old"
+                     android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:textSize="14dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="婴幼儿护理"
+                    android:textColor="#999696"
+                    android:id="@+id/xh"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#1598CE"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="11dp"
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关注老年人身体和心理的健康"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="13dp"
+                android:textColor="#333333"
+                android:textSize="14dp"
+
+                />
+
+            <TextView
+                android:layout_marginTop="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text"
+                android:textSize="10dp"
+                android:textColor="#A6A6A6"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="11dp"
+                android:id="@+id/text" />
+            
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="11dp"
+                android:src="@mipmap/class_pc"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

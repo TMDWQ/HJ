@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\t\t\t请问我有什么可以帮助你的？"
+        android:padding="10dp"
+        android:drawableLeft="@mipmap/server"
+        android:textColor="#d81e06"
+        android:textSize="25sp"
+        android:gravity="center_vertical"
+        />
+
+</LinearLayout>

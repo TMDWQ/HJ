@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.micro.android316.housekeeping.utils.Topbar
+        android:id="@+id/personal_information_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/TopBarBg"
+        custom:leftImg="@mipmap/top_back"
+        custom:title="消息"
+        custom:titleTextColor="@color/white_text"
+        custom:titleTextSize="12sp"
+        android:layout_alignParentTop="true"
+        android:padding="10dp">
+    </com.micro.android316.housekeeping.utils.Topbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/now_message"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="及时信息"
+            android:textSize="14sp"
+            android:textColor="@color/text_blue"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="历史信息"
+            android:textSize="14sp"
+            android:textColor="@color/wode_text"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/history_message" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/wode_space"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp">
+    </ListView>
+
+
+</LinearLayout>

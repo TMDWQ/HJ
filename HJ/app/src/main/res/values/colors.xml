@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="red">#f00</color>
+    <color name="main_color">#1598ce</color>
+    <color name="background_color">#f1f1f1</color>
+    <color name="yellow">#f8eb7f</color>
+    <color name="zw_white">#fff</color>
+    <color name="zw_yellow">#F8F661</color>
+    <color name="zw_green">#99D9F4</color>
+    <color name="zw_deep_green">#1598CE</color>
+    <color name="txt_1">#1598CE</color>
+    <color name="txt_2">#94C8DD</color>
+    <color name="txt_3">#999696</color>
+    <color name="txt_light">#A6A4A4</color>
+    <color name="txt_deep">#424141</color>
+    <color name="txt_normal">#595959</color>
+    <color name="txt_list">#B3B3B3</color>
+    <color name="btn_green">#27ABA4</color>
+    <color name="good">#1598CE</color>
+    <color name="bad">#807B7B</color>
+    <color name="light_black">#444</color>
+    <color name="dark_black">#111</color>
+    <color name="TopBarBg">#121212</color>
+    <color name="white_text">#fffefe</color>
+    <color name="wode_text">#424141</color>
+    <color name="wode_space">#E6E6E6</color>
+    <color name="text_blue">#1598ce</color>
+    <color name="address_phone_number">#5A5A5A</color>
+    <color name="address_text">#807D7D</color>
+    <color name="zw_an">#777</color>
+    <color name="zw_ming">#fff</color>
+    <color name="yellow_rating">#F3DC1A </color>
+</resources>
