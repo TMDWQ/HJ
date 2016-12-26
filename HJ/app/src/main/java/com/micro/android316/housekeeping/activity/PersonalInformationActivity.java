@@ -177,8 +177,10 @@ public class PersonalInformationActivity extends Activity{
             SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy年MM月dd日");
             registerTime.setText(dateFormat.format(new Date(l)));
             Log.i("hhhhh",info.get("head")+"bigo");
-            if(info.get("head")!=null)
-            LoadImage.Load(head, (String) info.get("head"),PersonalInformationActivity.this);
+            if(info.get("head")!=null) {
+                LoadImage.Load(head, (String) info.get("head"), PersonalInformationActivity.this);
+                LoginMessgae.saveHead(PersonalInformationActivity.this, (String) info.get("head"));
+            }
         }
     };
 
@@ -238,6 +240,7 @@ public class PersonalInformationActivity extends Activity{
     @Override
     protected void onDestroy() {
         super.onDestroy();
+
 
     }
 }

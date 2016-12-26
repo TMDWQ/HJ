@@ -65,4 +65,17 @@ public class LoginMessgae {
         return preferences.getString("address","");
     }
 
+
+    public static void saveHead(Context context,String address){
+        SharedPreferences preferences=context.getSharedPreferences("login",Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor=preferences.edit();
+        editor.putString("head",address);
+        editor.commit();
+    }
+
+    public static String getHead(Context context){
+        SharedPreferences preferences=context.getSharedPreferences("login",Context.MODE_PRIVATE);
+        return preferences.getString("head","");
+    }
+
 }

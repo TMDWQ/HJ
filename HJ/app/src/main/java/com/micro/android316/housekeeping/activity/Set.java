@@ -162,7 +162,7 @@ public class Set extends Activity {
                 clearCache(file);
                 Toast.makeText(Set.this,"清理成功",Toast.LENGTH_SHORT).show();
                 getCatchSize(file);
-                textView.setText(getMemery(size));
+                textView.setText("0 KB");
             }
         });
 

@@ -17,6 +17,8 @@ import com.micro.android316.housekeeping.fragment.HomePageFragment;
 import com.micro.android316.housekeeping.fragment.MainIndentFragment;
 import com.micro.android316.housekeeping.fragment.MineFragment;
 import com.micro.android316.housekeeping.utils.AppFinal;
+import com.micro.android316.housekeeping.utils.LoadImage;
+import com.micro.android316.housekeeping.utils.LoginMessgae;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +33,7 @@ public class HomeMainActivity extends FragmentActivity{
     private ViewPager viewPager;
     public static List<View> views=new ArrayList<>();
     private HomePageFragment homePageFragment;
+    private MineFragment mineFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -110,7 +113,7 @@ public class HomeMainActivity extends FragmentActivity{
     public void getFragmentList() {
          homePageFragment = new HomePageFragment();
          mainIndentFragment = new MainIndentFragment();
-        MineFragment mineFragment = new MineFragment();
+         mineFragment = new MineFragment();
         fragmentList.add(homePageFragment);
         fragmentList.add(mainIndentFragment);
         fragmentList.add(mineFragment);
@@ -160,5 +163,6 @@ public class HomeMainActivity extends FragmentActivity{
         mainIndentFragment.isNotComment=mainIndentFragment.isFirst=mainIndentFragment.isFirstTree=mainIndentFragment.isFirstTwo=true;
         homePageFragment.setAddress(this);
         mainIndentFragment.reAdd();
+        LoadImage.Load(mineFragment.getImage(), LoginMessgae.getHead(this),this);
     }
 }

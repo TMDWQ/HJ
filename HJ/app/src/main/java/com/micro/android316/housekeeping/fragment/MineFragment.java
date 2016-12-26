@@ -2,7 +2,6 @@ package com.micro.android316.housekeeping.fragment;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -19,8 +18,8 @@ import com.micro.android316.housekeeping.activity.FeedBack;
 import com.micro.android316.housekeeping.activity.Online;
 import com.micro.android316.housekeeping.activity.PersonalInformationActivity;
 import com.micro.android316.housekeeping.activity.Set;
-
-import java.io.FileNotFoundException;
+import com.micro.android316.housekeeping.utils.LoadImage;
+import com.micro.android316.housekeeping.utils.LoginMessgae;
 
 /**
  * Created by Administrator on 2016/12/12.
@@ -33,15 +32,12 @@ public class MineFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.mine_fragment,null);
         image= (HeadImage) view.findViewById(R.id.mine_head_img);
-        //LoadImage.Load(image,);
+
+
 
         LinearLayout linearLayout= (LinearLayout) view.findViewById(R.id.person_info);
         context=getActivity();
-        try {
-            image.setBitmap(BitmapFactory.decodeStream(context.openFileInput("head")));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        LoadImage.Load(image, LoginMessgae.getHead(context),context);
         linearLayout.setOnClickListener(listener);
         linearLayout= (LinearLayout) view.findViewById(R.id.message);
         linearLayout.setOnClickListener(listener);
@@ -100,4 +96,12 @@ public class MineFragment extends Fragment{
             }
         }
     };
+
+    public HeadImage getImage() {
+        return image;
+    }
+
+    public void setImage(HeadImage image) {
+        this.image = image;
+    }
 }
