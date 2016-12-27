@@ -154,7 +154,7 @@ public class HomePageFragment extends Fragment{
 
     String[] types = {"老人护理","婴幼儿护理","家居保洁","家具保洁","烹饪"};
     public void getData(){
-        String string = "http://139.199.196.199/android/index.php/home/index/getalltype";
+        String string = "http://139.199.196.199/android/index.php/home/index/getalltype?count=5";
         try {
             URL url = new URL(string);
             HttpURLConnection http = (HttpURLConnection) url.openConnection();

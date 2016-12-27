@@ -50,8 +50,9 @@ public class LoadImage extends AsyncTask<String,Void,Bitmap>{
         super.onPostExecute(bitmap);
         if(bitmap!=null)
         {
-            if (imageView!=null)
-            imageView.setImageBitmap(bitmap);
+            if (imageView!=null && imageView.getTag().equals(url)) {
+                imageView.setImageBitmap(bitmap);
+            }
             if(headImage!=null){
                 headImage.setBitmap(bitmap);
             }
