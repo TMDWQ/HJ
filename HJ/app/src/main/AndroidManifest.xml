@@ -92,6 +92,8 @@
         </service>
         <activity android:name=".activity.MainActivity"/>
         <activity android:name=".activity.WeiXin"/>
+        <activity android:name=".activity.PassWordChange"/>
+        <activity android:name=".activity.Search"/>
 
 
     </application>

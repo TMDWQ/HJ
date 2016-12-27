@@ -20,10 +20,10 @@ import java.util.Date;
 
 public class AlbumTools {
 
-    public static void openAlbum(Activity activity,int requestCode){//打开相册
+    public static void openAlbum(Activity activity,int requestCode){//打开相册（activity,请求吗）
         Intent albumIntent = new Intent(Intent.ACTION_PICK, null);
         albumIntent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*");
-        activity.startActivityForResult(albumIntent,requestCode);
+        activity.startActivityForResult(albumIntent,requestCode);//进行回调
     }
 
     public static File createFile(Context context){
@@ -64,7 +64,7 @@ public class AlbumTools {
         return null;
     }
 
-    public static String choose(Intent data,Context context){
+    public static String choose(Intent data,Context context){//将onAvtivityResult的Inten里面的数据quchulai
         /**
          * 不验证请求码和返回码
          * */

@@ -1,6 +1,7 @@
 package com.micro.android316.housekeeping.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -35,6 +36,7 @@ public class Set extends Activity {
     private long size=0;
     private ShareToWeiXin shareToWeiXin;
     private TextView textView;
+    private LinearLayout changePassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +48,8 @@ public class Set extends Activity {
         Log.i("zhzh",file.toString());
         getCatchSize(file);
         textView.setText(getMemery(size));
-        clearMemery();
+        clearMemery();//清理内存
+        change();//修改密码
 
 
     }
@@ -57,6 +60,7 @@ public class Set extends Activity {
         textView= (TextView) findViewById(R.id.mine_message_img);
         clear= (LinearLayout) findViewById(R.id.clear);
         file=getCacheDir();
+        changePassword= (LinearLayout) findViewById(R.id.change_password);
     }
 
     public void exit(){
@@ -182,6 +186,16 @@ public class Set extends Activity {
             re+=c;
         }
         return  s;
+    }
+
+    private void change(){
+        changePassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Set.this,PassWordChange.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

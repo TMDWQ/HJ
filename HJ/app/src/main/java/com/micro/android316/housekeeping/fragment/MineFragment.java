@@ -33,8 +33,6 @@ public class MineFragment extends Fragment{
         View view=inflater.inflate(R.layout.mine_fragment,null);
         image= (HeadImage) view.findViewById(R.id.mine_head_img);
 
-
-
         LinearLayout linearLayout= (LinearLayout) view.findViewById(R.id.person_info);
         context=getActivity();
         LoadImage.Load(image, LoginMessgae.getHead(context),context);
@@ -51,8 +49,6 @@ public class MineFragment extends Fragment{
         linearLayout.setOnClickListener(listener);
         linearLayout= (LinearLayout) view.findViewById(R.id.address);
         linearLayout.setOnClickListener(listener);
-
-
         return view;
     }
 

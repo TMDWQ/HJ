@@ -15,8 +15,10 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:background="#159"
-            android:text="高清地图"
+            android:text="地图"
+            android:gravity="center"
             android:textColor="#fff"
+            android:drawableLeft="@mipmap/map"
             />
         <Button
             android:id="@+id/wei_xing"
@@ -26,14 +28,16 @@
             android:background="#159"
             android:text="卫星地图"
             android:textColor="#fff"
+            android:drawableLeft="@mipmap/wei_xing_no"
             />
         <Button
+            android:drawableLeft="@mipmap/dao_lu_no"
             android:id="@+id/normal"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:background="#159"
-            android:text="ON/OFF交通导图"
+            android:text="交通"
             android:textColor="#fff"
             />
 

@@ -120,7 +120,9 @@ public class Online extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        client.destory();
+        if(client==null) {
+            client.destory();
+        }
     }
 
 

@@ -19,6 +19,7 @@ import com.micro.android316.housekeeping.R;
 import com.micro.android316.housekeeping.activity.Category;
 import com.micro.android316.housekeeping.activity.MainActivity;
 import com.micro.android316.housekeeping.activity.NannyInformation;
+import com.micro.android316.housekeeping.activity.Search;
 import com.micro.android316.housekeeping.adapter.HomePageAdapter;
 import com.micro.android316.housekeeping.model.HomePageModel;
 import com.micro.android316.housekeeping.utils.LoginMessgae;
@@ -48,6 +49,7 @@ public class HomePageFragment extends Fragment{
     TextView clean,cooking;
     TextView addressLocation;
     ImageView clearImage,cookingImgae;
+    ImageView search;
 
 
 
@@ -64,6 +66,14 @@ public class HomePageFragment extends Fragment{
         addressLocation= (TextView) view1.findViewById(R.id.address_location);
         clearImage= (ImageView) view1.findViewById(R.id.clean);
         cookingImgae= (ImageView) view1.findViewById(R.id.cooking);
+        search= (ImageView) view1.findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(), Search.class);
+                startActivity(intent);
+            }
+        });
         String ads= LoginMessgae.getAddress(getContext());
         if(ads!=null && !ads.equals("")){
             addressLocation.setText(div(ads));

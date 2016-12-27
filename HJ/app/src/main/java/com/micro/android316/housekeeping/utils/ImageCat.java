@@ -11,7 +11,7 @@ import android.os.Bundle;
  */
 
 public class ImageCat {
-
+                           //uri            输入的宽      输出的高
     public static void cat(Uri photoUri, int outWith, int outHeight, Activity activity,int code){
         Intent intent = new Intent("com.android.camera.action.CROP")
                 .setDataAndType(photoUri, "image/*").putExtra("crop", "true")

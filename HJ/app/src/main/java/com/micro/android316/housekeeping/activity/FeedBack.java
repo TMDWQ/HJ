@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.micro.android316.housekeeping.R;
 import com.micro.android316.housekeeping.utils.AlbumTools;
+import com.micro.android316.housekeeping.utils.LoginMessgae;
 
 /**
  * Created by Administrator on 2016/12/12.
@@ -35,6 +36,11 @@ public class FeedBack extends Activity {
                 case R.id.textview_feedback_commit:
                     strIdea=idea.getText().toString();
                     strPhone=phone.getText().toString();
+                    if(strIdea.length()==0 || strPhone.length()==0){
+                        Toast.makeText(FeedBack.this,"你的评论内容不能为空",Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
                     Toast.makeText(FeedBack.this,"发送成功,正在返回请稍候...",Toast.LENGTH_LONG).show();
                     new Thread(){
                        public void run(){
@@ -71,6 +77,7 @@ public class FeedBack extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
         init();
+        phone.setText(LoginMessgae.getTel(this));
     }
     public void init(){
         commit=(TextView)findViewById(R.id.textview_feedback_commit);
@@ -89,6 +96,9 @@ public class FeedBack extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if(data==null){
+            return;
+        }
         String path=AlbumTools.choose(data,this);
         add.setPadding(0,0,0,0);
         //add.setImageBitmap(BitmapFactory.decodeFile(path));

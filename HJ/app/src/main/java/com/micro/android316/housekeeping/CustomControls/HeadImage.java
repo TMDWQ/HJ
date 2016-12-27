@@ -36,22 +36,16 @@ public class HeadImage extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        if(bitmap==null){
-            canvas.drawCircle(60,60,60,paint);
+        if(bitmap==null){//没有位图就设置一个圆
+            canvas.drawCircle(60,60,60,paint);//(坐标x,坐标y,园的半径)
             return ;
         }
 
         canvas.drawCircle(60,60,60,paint);
-        //canvas.drawARGB(0, 0, 0, 0); // 填充整个Canvas
         setLayerType(LAYER_TYPE_SOFTWARE, null);//注意，一定要禁用硬件加速器
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
         canvas.drawBitmap(bitmap,0,0,paint);
         paint.setXfermode(null);
-//        paint.setStyle(Paint.Style.STROKE);
-//        paint.setStrokeWidth(5);
-//        canvas.drawCircle(60,60,60,paint);
-
-
 
     }
     public void init(){
@@ -63,7 +57,7 @@ public class HeadImage extends View {
     }
 
     @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {//测量
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         setMeasuredDimension(125,125);
     }
@@ -72,7 +66,7 @@ public class HeadImage extends View {
         return bitmap;
     }
 
-    public void setBitmap(Bitmap bitmap) {
+    public void setBitmap(Bitmap bitmap) {//获取位图
         this.bitmap = bitmap;
         invalidate();
     }

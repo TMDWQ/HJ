@@ -30,6 +30,7 @@
             android:paddingTop="5dp"
             android:paddingBottom="5dp"/>
         <ImageView
+            android:id="@+id/search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/home_search"

@@ -70,26 +70,33 @@ public class MainActivity extends AppCompatActivity {
                         gaoQing.setTextColor(Color.RED);
                         weiXing.setTextColor(Color.WHITE);
                        // normal.setTextColor(Color.WHITE);
+                        gaoQing.setCompoundDrawablesWithIntrinsicBounds(getResources().getDrawable(R.mipmap.map),null,null,null);
+                        weiXing.setCompoundDrawablesWithIntrinsicBounds(getResources().getDrawable(R.mipmap.wei_xing_no),null,null,null);
+
                         break;
                     case R.id.wei_xing:
                         //卫星地图
                         mBaiduMap.setMapType(BaiduMap.MAP_TYPE_SATELLITE);
                         gaoQing.setTextColor(Color.WHITE);
                         weiXing.setTextColor(Color.RED);
+                        gaoQing.setCompoundDrawablesWithIntrinsicBounds(getResources().getDrawable(R.mipmap.map_no),null,null,null);
+                        weiXing.setCompoundDrawablesWithIntrinsicBounds(getResources().getDrawable(R.mipmap.wei_xing),null,null,null);
                       //  normal.setTextColor(Color.WHITE);
                         break;
                     case  R.id.normal:
-                        //空白地图, 基础地图瓦片将不会被渲染。在地图类型中设置为NONE，将不会使用流量下载基础地图瓦片图层。使用场景：与瓦片图层一起使用，节省流量，提升自定义瓦片图下载速度。
+                        //显示路况
                         if(isOFF){
                             mBaiduMap.setTrafficEnabled(true);
                             mBaiduMap.setBaiduHeatMapEnabled(true);
                             normal.setTextColor(Color.RED);
+                            normal.setCompoundDrawablesWithIntrinsicBounds(getResources().getDrawable(R.mipmap.dao_lu),null,null,null);
                             isOFF=false;
                             return;
                         }
                         normal.setTextColor(Color.WHITE);
                         mBaiduMap.setTrafficEnabled(false);
                         mBaiduMap.setBaiduHeatMapEnabled(false);
+                        normal.setCompoundDrawablesWithIntrinsicBounds(getResources().getDrawable(R.mipmap.dao_lu_no),null,null,null);
                         isOFF=true;
                         break;
                 }

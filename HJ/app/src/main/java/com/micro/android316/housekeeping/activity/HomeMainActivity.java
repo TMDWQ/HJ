@@ -163,6 +163,9 @@ public class HomeMainActivity extends FragmentActivity{
         mainIndentFragment.isNotComment=mainIndentFragment.isFirst=mainIndentFragment.isFirstTree=mainIndentFragment.isFirstTwo=true;
         homePageFragment.setAddress(this);
         mainIndentFragment.reAdd();
-        LoadImage.Load(mineFragment.getImage(), LoginMessgae.getHead(this),this);
+        if(mineFragment!=null) {
+            if(mineFragment.getImage()!=null)
+            LoadImage.Load(mineFragment.getImage(), LoginMessgae.getHead(this), this);
+        }
     }
 }

@@ -9,7 +9,7 @@ import android.widget.TextView;
 import com.micro.android316.housekeeping.R;
 
 /**
- * Created by Administrator on 2016/12/24.
+ * Created by 张文 on 2016/12/24.
  */
 
 public class WeiXin extends Activity {
@@ -67,10 +67,6 @@ public class WeiXin extends Activity {
             }
         });
     }
-
-
-
-
 
 
 }

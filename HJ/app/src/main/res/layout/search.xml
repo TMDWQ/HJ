@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="搜索"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#111"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/edit_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ccc"
+        android:padding="10dp"
+        android:hint="\t\t\t请输入关键字"
+        android:gravity=""
+        android:maxLines="1"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@mipmap/home_search"
+        android:layout_marginTop="10dp"
+        />
+    <ListView
+        android:layout_marginTop="20dp"
+        android:id="@+id/list_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>

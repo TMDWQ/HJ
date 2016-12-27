@@ -67,9 +67,8 @@ public class OrderAdapter extends BaseAdapter{
             price.setText(list.get(position).getPrice()+"元/小时");
             oldPrice.setText((toInt(list.get(position).getPrice())+10)+"元/小时");
 
-        }else {
+        }else{
             convertView=inflater.inflate(R.layout.waitpay_indent_item,null);
-            //what_service,what_time,what_place
             int len=list.get(position).getLen().charAt(0)-48;
             TextView whatService,whatTime,whatPlace,ziFu;
             whatPlace= (TextView) convertView.findViewById(R.id.what_place);

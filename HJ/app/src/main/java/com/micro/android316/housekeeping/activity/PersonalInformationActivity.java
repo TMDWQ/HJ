@@ -28,6 +28,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -186,7 +188,12 @@ public class PersonalInformationActivity extends Activity{
 
     public void set(){
         b=false;
-        String value="tel="+LoginMessgae.getTel(this)+"&birthday="+birthday.getText()+"&mailbox="+email.getText()+"&id="+personId.getText();
+        String value= null;
+        try {
+            value = "tel="+ LoginMessgae.getTel(this)+"&birthday="+ URLEncoder.encode(birthday.getText().toString(),"utf-8")+"&mailbox="+email.getText()+"&id="+personId.getText();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
         Log.i("hhh",URI_FOR_CHACGE+value);
         HttpTools tools=new HttpTools(URI_FOR_CHACGE+value) {
             @Override
